@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .table{
+        margin: auto;
+        margin-top: 10%;
+    }
+    .table  tr{
+        border: 1px silver solid;
+    }
+    .table  tr  td {
+        border: 1px silver solid;
+        padding: 10px;
+    }
+    .table tr td input::-webkit-input-placeholder{
+        color: red;
+    }
+</style>
+<body>
+    <table class="table" style="background-color: lightblue; border: 1px silver solid; border-radius: 10px;">
+        <tr>
+            <td>Họ và tên</td>
+            <td>
+                <input type="number" placeholder="Nhập vào họ tên">
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td>
+                <input type="text" placeholder="Nhập vào địa chỉ">
+            </td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td>
+                <input type="text" placeholder="Nhập vào SĐT">
+            </td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td>
+                <label for="">Nam</label>
+                <input type="radio" checked>
+                <label for="">Nu</label>
+                <input type="radio">
+            </td>
+        </tr>
+        <tr>
+            <td>Nghề nghiệp</td>
+            <td>
+                <select name="" id="">
+                    <option value="">Kỹ sư phần mềm</option>
+                    <option value="">Data Science</option>
+                    <option value="">Tester</option>
+                    <option value="">Devops</option>
+                    <option value="">Back-end Java</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Số người dự đoán tham gia</td>
+            <td><input type="text" placeholder="Nhập số người tham gia"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="button" value="Đồng ý"> 
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="color: red; text-align: center;">
+                <strong>Bạn đã tham gia thành công</strong>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

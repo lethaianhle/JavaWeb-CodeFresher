@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.slickRed {
+  line-height: 50px;
+  background-color: yellow;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#slick {
+  color: white;
+}
+
+#red {
+  color: black;
+}
+
+.menu {
+  line-height: 50px;
+  background-color: brown;
+}
+.banner {
+  line-height: 500px;
+  text-align: center;
+  width: 100%;
+  background-color: lightblue;
+}
+.content {
+  display: flex;
+  line-height: 300px;
+  text-align: center;
+}
+.left {
+  background-color: blue;
+  width: 30%;
+}
+.main {
+  background-color: violet;
+  width: 30%;
+  flex: 1;
+}
+.right {
+  background-color: red;
+  width: 30%;
+}
+.footer {
+  background-color: black;
+  line-height: 150px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    line-height: 250px;
+  }
+  .content {
+    display: block;
+    line-height: 204px;
+  }
+  .left {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .footer {
+    line-height: 100px;
+  }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 50%;
+        min-height: 500px;
+        border: 1px red solid;
+        margin: 20px auto;
+    }
+
+    .header {
+        display: flex;
+        border-bottom: 1px red solid;
+    }
+
+    .header__left {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px red solid;
+    }
+
+    .header__left--top {
+        background-color: red;
+        color: white;
+        font-size: large;
+        font-weight: bolder;
+        text-align: end;
+        line-height: 50px;
+    }
+
+    .header__left--bottom {
+        background-color: rgb(233, 159, 159);
+        color: red;
+        text-align: center;
+        font-size: large;
+        font-weight: bolder;
+        line-height: 50px;
+        border-top: 1px red solid;
+        margin-top: 25px;
+    }
+
+    .header__right {
+        margin: auto;
+        margin-top: 4px;
+    }
+
+    .header .header__right img {
+        width: 120px;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .main__left {
+        width: 50%;
+        border-right: 1px red solid;
+        padding: 30px;
+    }
+
+    .main__left ul li {
+        padding: 11px;
+    }
+
+    .main__right {
+        width: 50%;
+        border-right: 1px red solid;
+        padding: 30px;
+    }
+
+    .main__right ul li {
+        padding: 11px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__left">
+                <div class="header__left--top">
+                    <p>Công nghệ dầu gội dưỡng tóc mới &nbsp;</p>
+                </div>
+                <div class="header__left--bottom">
+                    <p>Tỏa sáng cùng DOUBLE RICH</p>
+                </div>
+            </div>
+            <div class="header__right">
+                <img src="https://imgusr.tradekey.com/p-7104365-20121211013449/double-rich-body-shower.jpg" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="main__left">
+                <ul>
+                    <li style="list-style: square outside none;">
+                        <h3 style="color: red;">Sản phẩm khuyến mãi: </h2>
+                            <ul style="list-style-type: circle;">
+                                <li>Dầu gội Double Rich mới 200ml, 400ml có tem khuyến mãi</li>
+                            </ul>
+                    </li>
+                    <li style="list-style-type: square;">
+                        <h3 style="color: red;">Đối tượng tham gia</h3>
+                        <ul>
+                            <li>Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dicta necessitatibus
+                                rerum consequuntur alias ab dignissimos, animi vel perspiciatis voluptas dolores cumque
+                                eligendi aspernatur vitae sit commodi obcaecati dolor temporibus?</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class=" main__right">
+                <ul>
+                    <li style="list-style: square outside none;">
+                        <h3 style="color: red;">Sản phẩm khuyến mãi: </h2>
+                            <ul style="list-style-type: circle;">
+                                <li>Dầu gội Double Rich mới 200ml, 400ml có tem khuyến mãi</li>
+                            </ul>
+                    </li>
+                    <li style="list-style-type: square;">
+                        <h3 style="color: red;">Đối tượng tham gia</h3>
+                        <ul>
+                            <li>Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis dicta necessitatibus
+                                rerum consequuntur alias ab dignissimos, animi vel perspiciatis voluptas dolores cumque
+                                eligendi aspernatur vitae sit commodi obcaecati dolor temporibus?</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
