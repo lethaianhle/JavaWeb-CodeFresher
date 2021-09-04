@@ -1,0 +1,12 @@
+table {
+  text-align: center;
+}
+table tr td {
+  vertical-align: middle;
+}
+.alert {
+  margin-top: 20px;
+}
+#display {
+  color: red;
+}
