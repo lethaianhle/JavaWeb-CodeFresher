@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+
+<body>
+    <button class="btn">Submit</button>
+    <p id="display"></p>
+
+    <script>
+        function show() {
+            let display = document.getElementById('display');
+            let env = new XMLHttpRequest();
+
+            env.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    display.innerHTML = this.responseText;
+                    console.log('Du lieu da tra ve!');
+                }
+            }
+
+            env.open("GET", "https://www.24h.com.vn/", true);
+            env.send();
+            console.log(env.readyState);
+            console.log(env.responseText);
+        }
+
+        let btn = document.querySelector('.btn').addEventListener('click', show);
+        let display = document.getElementById('display');
+    </script>
+</body>
+
+</html>
